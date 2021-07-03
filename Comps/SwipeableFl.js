@@ -14,16 +14,11 @@ export default  class SwipeableFl extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            item:this.props.item
+            item:this.props.requireditem
         }
     }
-
-
-    createList = () =>{
-        db.collection('list-item').add({
-            item_name: item,
-            item_status: "remaining"
-        })
+    componentDidMount(){
+      console.log(" in swipe list", this.props.requireditem)
     }
 
     updateMarkAsdone = item => {

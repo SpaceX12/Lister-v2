@@ -89,8 +89,8 @@ export default class HomeSc extends React.Component{
 const styles = StyleSheet.create({
     imageIc : {
         marginTop:80,
-        height:RFValue(130),
-        width:RFValue(130),
+        height:RFValue(200),
+        width:RFValue(200),
         alignContent:'center',
         borderRadius:50
     },
